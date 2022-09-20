@@ -1,0 +1,29 @@
+#include<stdio.h>
+int main()
+{
+	int n=0;
+	int a=0;
+    int m=1;
+	int add=0;
+	printf("请输入一个数字\nn= ");
+	scanf("%d",&n);
+	a=n;
+	if(n>14&&n<16)
+	printf("该值依次减一的阶乘和已超出计算机的正常计算范围,得到的数据为错误数据\n");
+	else if(n>=16)
+	printf("该数据过大而无法经过计算机得到结果"); 
+	while(n!=1)
+    { 
+      m=m*n;
+      n--;
+    }
+    add=m;
+	while(m!=1)
+	{
+		m=m/a;
+		add=add+m;
+		a--;
+	}
+	printf("该数字依次减一所对应的数值的阶乘之和为%d",add);
+	return 0;
+}
