@@ -1,0 +1,17 @@
+#include<stdio.h>
+int main()
+{ 
+   int ret=0;
+   char password;
+   printf("请输入密码：");
+   scanf("%s",&password);
+   getchar();    //取走缓冲区中的'\n'(回车），其ascii码值是10 
+   printf("请确认（Y/N):");
+   ret=getchar();
+   if(ret=='Y')
+      printf("确认成功\n");
+   else
+      printf("确认失败\n");
+   putchar(ret);   
+   return 0;
+}
