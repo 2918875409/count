@@ -1,3 +1,4 @@
+//define 阶乘和=一个数字依次减一所对应的数字的阶乘的所加之和 
 /*#include<stdio.h>
 int main()
 {
@@ -43,4 +44,5 @@ int main()
 	}
 	printf("该数字的阶乘和为%d",sum);
 	return 0;
-} //define 阶乘和=一个数字依次减一所对应的数字的阶乘的所加之和 
+} 
+
